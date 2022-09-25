@@ -1,0 +1,120 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+     }
+
+     html, body {
+      height: 100%;
+   }
+     html {
+      font-size: 62.5%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    
+    html::-webkit-scrollbar {
+      width: 1rem;
+    }
+    
+    html::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    
+    html::-webkit-scrollbar-thumb {
+      background: #0602fc;
+    }
+    
+  
+     body {
+      font-family: "Poppsins";
+        background: linear-gradient(rgb(140, 204, 206), rgb(11, 95, 190));
+        min-height: 100vh;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .grid {
+        perspective: 600px;
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(3, 150px);
+        grid-gap: 20px;
+        max-width: 480px;
+        transform: rotate(45deg);
+        max-width: 0px;
+        margin-left: 770px;
+
+        
+        
+      }
+
+      
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: 60px;
+      color: #fff;
+      
+    }
+      .grid div {
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        padding: 20px;
+        color: transparent;
+        box-shadow: 30px 30px 30px -20px rgba(0, 0, 0, 0.6);
+        border-radius: 2px;
+      }
+      .grid div:nth-child(odd) {
+        -webkit-animation: 1000ms ease-in-out infinite alternate pulse;
+                animation: 1000ms ease-in-out infinite alternate pulse;
+      }
+      .grid div:nth-child(even) {
+        -webkit-animation: 1000ms 1000ms ease-in-out infinite alternate pulse;
+                animation: 1000ms 1000ms ease-in-out infinite alternate pulse;
+      }
+      
+      @-webkit-keyframes pulse {
+        to {
+          transform: translate3d(0px, 0px, -60px);
+          box-shadow: 15px 15px 20px -20px rgba(0, 0, 0, 0.8);
+        }
+      }
+      
+      @keyframes pulse {
+        to {
+          transform: translate3d(0px, 0px, -60px);
+          box-shadow: 15px 15px 20px -20px rgba(0, 0, 0, 0.8);
+        }
+      }
+  
+  
+  @media (min-width: 840x) {
+    .menu { 
+     display:none;
+     position: absolute;
+     background-color:rgb(53, 109, 212);
+     right: 0;
+     left: 0;
+     text-align: center;
+     padding: 16px 0;
+    }
+
+    .middle {
+      font-size: 20em;
+      
+      text-align: center;
+      padding: 16px 0;
+     }
+
+     
+    }
+
+

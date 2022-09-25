@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LTA</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <link rel="stylesheet" href="CSS/database.css"/>
+
+</head>
+
+<body>
+	
+
+	<div class="middle">
+		<div class="col pl-md-5 ml-md-5 px-4 p-0 text-center text-md-left">
+			<h2>Kommer...</h2>
+			<h1><span class="typing-text"></span></h1>
+		  </div>
+				<hr>
+				<p id="demo"></p>
+			  </div>
+			
+
+		
+			
+		
+
+			<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("November 20, 2022 14:00:00").getTime();
+			
+			// Update the count down every 1 second
+			var countdownfunction = setInterval(function() {
+			
+			  // Get todays date and time
+			  var now = new Date().getTime();
+			  
+			  // Find the distance between now an the count down date
+			  var distance = countDownDate - now;
+			  
+			  // Time calculations for days, hours, minutes and seconds
+			  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			  
+			  // Output the result in an element with id="demo"
+			  document.getElementById("demo").innerHTML = days + "d " + hours + "t "
+			  + minutes + "m " + seconds + "s ";
+			  
+			  // If the count down is over, write some text 
+			  if (distance < 0) {
+				clearInterval(countdownfunction);
+				document.getElementById("demo").innerHTML = "EXPIRED";
+			  }
+			}, 1000);
+
+			
+			</script>
+
+<script src="js/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script src="main.js"></script>
+
+<script>
+
+var typed = new Typed('.typing-text', {
+  strings: ['Snart', 'Soon', 'Pronto', 'すぐ', 'Cкоро', 'Presto', 'Wkrótce', 'Spoedig'],
+  typeSpeed:150,
+  loop:true
+});
+
+</script>
+	
+		  </div>
+	
+
+	  <div class="grid">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>
+	  </div>
+
+</body>
+</html
